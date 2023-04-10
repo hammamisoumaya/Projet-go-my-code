@@ -5,34 +5,21 @@ const serviceRoute = express.Router()
 
 
 // Route pour créer un nouveau service
-serviceRoute.post('/services', (req, res) => {
- try{const { nom, description, prix } = req.body;
-
-  // Ajouter le nouveau service à la base de données ou effectuer toute autre opération nécessaire
-  const nouveauService = {
-    nom,
-    description,
-    prix
-  }
-
-  // Retourner le nouveau service créé avec un code HTTP 201 (Created)
-  res.status(201).json(nouveauService)} catch (err){
-    console.log(err)
-  }
-}) 
+serviceRoute.post('/services', async(req, res) => {
+    try{
+   const newservice = new serviceSchema(req.body)
+   await  newservice.save()
+     res.status(200).json({msg:'you could add ur new service',newservice})
+    }catch(err){
+        console.log(err)
+    }
+})
 
 // Route pour mettre à jour un service existant
-serviceRoute.put('/services/:id', (req, res) => {
+serviceRoute.put('/services/:id', async(req, res) => {
   try{
-  const { id } = req.params;
-  const { nom, description, prix } = req.body;
-
-  // Mettre à jour le service correspondant dans la base de données ou effectuer toute autre opération nécessaire
-  const serviceMaj = {
-    nom,
-    description,
-    prix
-  };
+    const {id}=req.params
+    const updateservice = await serviceSchema.findByIdAndUpdate(id,{$set:{...req.body}})
 
   // Retourner le service mis à jour avec un code HTTP 200 (OK)
   res.json(serviceMaj)} catch(err){

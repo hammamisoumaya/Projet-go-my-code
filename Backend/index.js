@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require ('cors')
 const connectdb= require ('./config/connectdb')
 const userRoute = require('./routes/routeuser')
+const serviceRoute = require('./routes/routeservice');
 const app = express()
 const port = 4000
 require ('dotenv').config()
@@ -20,6 +21,7 @@ app.use('/auth',userRoute)
 
 
 
+app.use('/services', serviceRoute);
 
 
 

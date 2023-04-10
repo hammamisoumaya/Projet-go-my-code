@@ -9,14 +9,11 @@ const serviceSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  prix: {
-    type: Number,
-    required: true
-  },
-  dateCreation: {
-    type: Date,
-    default: Date.now
+  image: {
+    type: String
+    
   }
+
 });
 
 const Service = mongoose.model('Service', serviceSchema);

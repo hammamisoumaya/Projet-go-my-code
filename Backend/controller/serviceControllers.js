@@ -28,7 +28,7 @@ exports.createService = async (req, res) => {
   const service = new serviceSchema({
     nom: req.body.nom,
     description: req.body.description,
-    prix: req.body.prix
+    image: req.body.image
   });
 
   try {
@@ -55,8 +55,8 @@ exports.updateService = async (req, res) => {
       service.description = req.body.description;
     }
 
-    if (req.body.prix != null) {
-      service.prix = req.body.prix;
+    if (req.body.image != null) {
+      service.image = req.body.image;
     }
 
     const serviceMaj = await service.save();
