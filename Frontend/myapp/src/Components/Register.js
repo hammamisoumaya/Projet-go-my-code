@@ -32,7 +32,8 @@ const Register = () => {
 
 
   return (
-    <div className="main">
+    <div className= "bodyregister">
+      <div className ="main">
     <input type="checkbox" id="chk" aria-hidden="true" />
     <div className="signup">
       <form>
@@ -55,7 +56,7 @@ const Register = () => {
         
       </form>
     </div>
-    <div class="login">
+    <div class="login  ">
     <form>
     <label for="chk" aria-hidden="true">Login</label>
       <input type="text" placeholder="Email address "  value={email}  
@@ -68,6 +69,7 @@ const Register = () => {
     <button type="button"  onClick={()=>handelLogin({email,password})} >login</button>
   </form>
 			</div>
+      </div>
   </div>
     
 

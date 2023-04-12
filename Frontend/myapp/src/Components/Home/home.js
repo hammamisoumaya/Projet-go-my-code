@@ -26,6 +26,16 @@ const home = () => {
     }}
   />
   <NavBar/>
+  {/*header */}
+<header>
+<div className="overlay">
+<h1>Simply The Best</h1>
+<h3>Reasons for Choosing US</h3>
+<h1>Quete Technologie</h1>
+	
+
+		</div>
+    </header>
   {/* Header with full-height image */}
   <header className="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div className="w3-display-left w3-text-white" style={{ padding: 48 }}>
@@ -213,16 +223,7 @@ const home = () => {
       </div>
     </div>
   </div>
-{/*header */}
-<header>
-<div className="overlay">
-<h1>Simply The Best</h1>
-<h3>Reasons for Choosing US</h3>
-<h1>Quete Technologie</h1>
-	
 
-		</div>
-    </header>
 
 
 
