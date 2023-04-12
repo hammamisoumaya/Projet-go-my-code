@@ -1,15 +1,15 @@
 import React from 'react'
 
-import './Cardservice.css'
+import './Cardcareer.css'
 import { useNavigate } from 'react-router';
-import {deleteServices} from '../../api/authservice'
-const Cardservice = ({service,getservice}) => {
+import {deletecareer} from '../../api/authcareer'
+const Cardcareer = ({career,getcareer}) => {
 
  
   const navigate=useNavigate()
 
-  const navupdate=()=>{
-navigate(`/Updateservice/${service._id}`)
+  const navcar=()=>{
+navigate(`/updatecarrer/${career._id}`)
   }
 
 
@@ -18,19 +18,17 @@ navigate(`/Updateservice/${service._id}`)
    
     
     <div>
-       <button onClick={()=>navupdate()}>Update</button>
-       <button onClick={async()=>{await deleteServices(service._id);getservice()}}>Delete</button>
+       <button onClick={()=>navcar()}>Update</button>
+       <button onClick={async()=>{await deletecareer(career._id);getcareer()}}>Delete</button>
      
         <section className="articles">
   <article>
     <div className="article-wrapper">
-      <figure>
-        <img src={service.image} alt="" />
-      </figure>
+      
       <div className="article-body">
-        <h2>{service.nom}</h2>
+        <h2>{career.nom}</h2>
         <p>
-        {service.description}
+        {career.description}
         </p>
         <a href="#" className="read-more">
           Read more <span className="sr-only">about this is some title</span>
@@ -58,4 +56,4 @@ navigate(`/Updateservice/${service._id}`)
   )
 }
 
-export default Cardservice
+export default Cardcareer

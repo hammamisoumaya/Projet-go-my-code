@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router';
-import {PostServices} from '../../api/authservice'
-import './Addservice.css'
+import {Postcareer} from '../../api/authcareer'
+import './Addcareer.css'
 import Nav  from '../Nav/Nav'
 
 
-const Addservice = () => {
-  const [nom,setnom]=useState('')
+const Addcareer = () => {
+  const [name,setname]=useState('')
   const [description,setdescription]=useState('')
-  const [image,setimage]=useState('')
     const navigate = useNavigate()
-    const handelAdd=async(values)=>{
-        await PostServices(values)
-        navigate('/listservice')
+    const handelcar=async(values)=>{
+        await Postcareer(values)
+        navigate('/listcareer')
        }
 
 
@@ -26,12 +25,12 @@ const Addservice = () => {
     <div className="signup">
         <form>
         <label htmlFor="chk" aria-hidden="true">
-          Ajouter un service
+          Ajouter un career
         </label>
         
-        <input type="text"   value={nom} 
+        <input type="text"   value={name} 
             
-            onChange={(event) => setnom(event.target.value)} />
+            onChange={(event) => setname(event.target.value)} />
        
       
       
@@ -40,14 +39,8 @@ const Addservice = () => {
             onChange={(event) => setdescription(event.target.value)} />
       
       
-      <input
-        type="text"
-        id="image"
-        name="image"
-        value={image}
-        onChange={(event) => setimage(event.target.value)}
-      />
-      <button type="button" onClick={()=>handelAdd({nom,description,image})}>Ajouter</button>
+     
+      <button type="button" onClick={()=>handelcar({name,description})}>Ajouter</button>
     </form>
   </div>
   </div>
@@ -56,4 +49,4 @@ const Addservice = () => {
   )
 }
 
-export default Addservice
+export default Addcareer

@@ -9,6 +9,9 @@ import Dashborad from './Components/Dashborad/Dashborad'
 import Listservice from './Components/Listservice/Listservice'
 import Addservice from './Components/Addservice/Addservice'
 import Updateservice from './Components/Updateservice/Updateservice'
+import Listcareer from './Components/Listcareer/Listcareer'
+import Addcareer from './Components/Addcareer/Addcareer'
+import Updatecareer from './Components/Updatecareer/Updatecareer'
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
        <Route path='/listservice' element={<Listservice/>}/>
        <Route path='/Addservice' element={<Addservice/>}/>
        <Route path='/Updateservice/:id' element={<Updateservice/>}/>
+       <Route path='/listcareer' element={<Listcareer/>}/>
+       <Route path='/Addcareer' element={<Addcareer/>}/>
+       <Route path='/Updatecareer/:id' element={<Updatecareer/>}/>
 
 
      </Routes>

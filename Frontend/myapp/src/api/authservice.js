@@ -14,7 +14,7 @@ export const updateServices = async(id,values)=>{
 }
 
 export const  deleteServices =async(id)=>{
-    const deleteduser = await axios.delete(`http://localhost:4000/services/deleteservice/${id}`)
+    const deletedcareer = await axios.delete(`http://localhost:4000/services/deleteservice/${id}`)
 }
 
 export const  getUniqueServices=async(id,values)=>{
