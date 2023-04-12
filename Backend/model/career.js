@@ -8,4 +8,6 @@ const CareerSchema = mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Career',CareerSchema)
+const Career = mongoose.model('Career', CareerSchema);
+
+module.exports = Career;

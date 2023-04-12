@@ -26,6 +26,7 @@ serviceRoute.post('/addservice', async(req, res) => {
     }
 })
 
+
 // Route pour mettre à jour un service existant
 serviceRoute.put('/updateservice/:id', async(req, res) => {
   try{
@@ -33,7 +34,7 @@ serviceRoute.put('/updateservice/:id', async(req, res) => {
     const updateservice = await serviceSchema.findByIdAndUpdate(id,{$set:{...req.body}})
 
   // Retourner le service mis à jour avec un code HTTP 200 (OK)
-  res.json(serviceMaj)} catch(err){
+  res.status(200).json({msg:"you could update me",updateservice})} catch(err){
     console.log(err)
   }
 });
