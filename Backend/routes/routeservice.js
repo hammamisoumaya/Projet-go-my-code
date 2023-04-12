@@ -4,8 +4,19 @@ const serviceSchema = require ('../model/service')
 const serviceRoute = express.Router()
 
 
+serviceRoute.get('/getservice',async(req,res)=>{
+  try{
+      const ser = await serviceSchema.find()
+      res.status(200).json({msg:'this is ur service list',ser})
+  }catch(err){
+      console.log(err)
+  }
+})
+
+
+
 // Route pour créer un nouveau service
-serviceRoute.post('/services', async(req, res) => {
+serviceRoute.post('/addservice', async(req, res) => {
     try{
    const newservice = new serviceSchema(req.body)
    await  newservice.save()
@@ -16,7 +27,7 @@ serviceRoute.post('/services', async(req, res) => {
 })
 
 // Route pour mettre à jour un service existant
-serviceRoute.put('/services/:id', async(req, res) => {
+serviceRoute.put('/updateservice/:id', async(req, res) => {
   try{
     const {id}=req.params
     const updateservice = await serviceSchema.findByIdAndUpdate(id,{$set:{...req.body}})
@@ -28,7 +39,7 @@ serviceRoute.put('/services/:id', async(req, res) => {
 });
 
 // Route pour supprimer un service existant
-serviceRoute.delete('/services/:id', (req, res) => {
+serviceRoute.delete('/deleteservice/:id', (req, res) => {
   try { const { id } = req.params;
 const deletservice = serviceSchema.findByIdAndDelete(id)
   // Supprimer le service correspondant de la base de données ou effectuer toute autre opération nécessaire
@@ -37,5 +48,16 @@ const deletservice = serviceSchema.findByIdAndDelete(id)
     console.log(err)
   }
 });
+
+
+serviceRoute.get('/getservice/:id',async(req,res)=>{
+  try{
+      const {id}=req.params
+      const getuniqueservice = await serviceSchema.findById(id)
+      res.status(200).json({msg:'you found that service',getuniqueservice})
+  }catch(err){
+      console.log(err)
+  }
+})
 
 module.exports= serviceRoute
