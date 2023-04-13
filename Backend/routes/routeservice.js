@@ -45,7 +45,7 @@ serviceRoute.delete('/deleteservice/:id', (req, res) => {
 const deletservice = serviceSchema.findByIdAndDelete(id)
   // Supprimer le service correspondant de la base de données ou effectuer toute autre opération nécessaire
   // Retourner un message de succès avec un code HTTP 204 (No Content)
-  res.sendStatus(204)} catch(err){
+  res.status(200).json({msg:'you deleted that service'})} catch(err){
     console.log(err)
   }
 });
