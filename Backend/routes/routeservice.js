@@ -40,9 +40,9 @@ serviceRoute.put('/updateservice/:id', async(req, res) => {
 });
 
 // Route pour supprimer un service existant
-serviceRoute.delete('/deleteservice/:id', (req, res) => {
+serviceRoute.delete('/deleteservice/:id',async (req, res) => {
   try { const { id } = req.params;
-const deletservice = serviceSchema.findByIdAndDelete(id)
+const deletservice =await serviceSchema.findByIdAndDelete(id)
   // Supprimer le service correspondant de la base de données ou effectuer toute autre opération nécessaire
   // Retourner un message de succès avec un code HTTP 204 (No Content)
   res.status(200).json({msg:'you deleted that service'})} catch(err){

@@ -8,15 +8,15 @@ import Nav  from '../Nav/Nav'
 
 const Listcareer = () => {
   //partie redux 
-  const career = useSelector(state=>state.career)
-  console.log(career,'career b3ed rabtan bil db')
+  const careerss = useSelector(state=>state.career)
+  console.log(careerss,'career b3ed rabtan bil db')
 //partie jiben el data 
 
 const dispatch = useDispatch()
 const getcareer = async()=>{
   const data = await fetchcareer()
-   console.log(data.ser,'data get services ')
-  dispatch(setcareer(data.ser))
+   console.log(data.carr,'data get services ')
+  dispatch(setcareer(data.carr))
 }
 
 useEffect(()=>{
@@ -29,7 +29,7 @@ useEffect(()=>{
     <div> <Nav/> 
     <div >
       {
-        career.map((e)=> <Cardcareer career={e}  getcareer={getcareer} /> )
+        careerss.map((e)=> <Cardcareer career={e}  getcareer={getcareer} /> )
       }
     </div>
     </div>

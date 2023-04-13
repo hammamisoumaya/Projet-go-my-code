@@ -8,8 +8,8 @@ const Cardcareer = ({career,getcareer}) => {
  
   const navigate=useNavigate()
 
-  const navcar=()=>{
-navigate(`/updatecarrer/${career._id}`)
+  const navcar = ()=>{
+navigate(`/Updatecareer/${career._id}`)
   }
 
 
@@ -18,7 +18,7 @@ navigate(`/updatecarrer/${career._id}`)
    
     
     <div>
-       <button onClick={()=>navcar()}>Update</button>
+       <button type="button" onClick={()=>navcar()}>Update</button>
        <button onClick={async()=>{await deletecareer(career._id);getcareer()}}>Delete</button>
      
         <section className="articles">
@@ -26,7 +26,7 @@ navigate(`/updatecarrer/${career._id}`)
     <div className="article-wrapper">
       
       <div className="article-body">
-        <h2>{career.nom}</h2>
+        <h2>{career.name}</h2>
         <p>
         {career.description}
         </p>

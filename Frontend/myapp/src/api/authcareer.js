@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const fetchcareer = async()=>{
-    const {data} = await axios.get('http://localhost:4000/career/getservice')
+    const {data} = await axios.get('http://localhost:4000/career/getcareer')
     return data 
 }
 

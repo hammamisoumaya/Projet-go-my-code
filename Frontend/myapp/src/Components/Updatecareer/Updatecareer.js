@@ -5,8 +5,8 @@ import { useNavigate,useParams } from 'react-router';
 import Nav  from '../Nav/Nav'
 
 const Updatecareer  = () => {
-  const [name,setname]=useState('')
-const [description,setdescription]=useState('')
+  const [name,setName]=useState('')
+const [description,setDescription]=useState('')
 
 const navigate = useNavigate()
 const {id}=useParams()
@@ -20,9 +20,9 @@ navigate('/listcareer')
 
 const getUniqueId=async(careerid)=>{
 const data = await getUniquecareer(careerid)
-console.log("data unique",data.getUniquecareer)
-setname(data.getUniquecareer.name)
-setdescription(data.getUniquecareer.description)
+console.log("data unique",data.getuniquecareer)
+setName(data.getuniquecareer.name)
+setDescription(data.getuniquecareer.description)
 
 
 
@@ -46,13 +46,13 @@ if(id){getUniqueId(id)}
     
     <input type="text"   value={name} 
         
-        onChange={(event) => setname(event.target.value)} />
+        onChange={(event) => setName(event.target.value)} />
    
   
   
     <input   value={description}
         
-        onChange={(event) => setdescription(event.target.value)} />
+        onChange={(event) => setDescription(event.target.value)} />
   
  
       <button type="button" onClick={()=>handecar(id,{name,description})}>Ajouter</button>

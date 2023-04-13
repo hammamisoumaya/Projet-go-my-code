@@ -17,8 +17,8 @@ carrerRoute.get('/getcareer',async(req,res)=>{
 
 carrerRoute.post('/addcareer',async(req,res)=>{
     try{
-   const newCarrer = new CareerSchema(req.body)
-   await  newCarrer.save()
+   const newCarrer =await new CareerSchema(req.body)
+    newCarrer.save()
      res.status(200).json({msg:'you could add ur new contact',newCarrer})
     }catch(err){
         console.log(err)
