@@ -4,7 +4,7 @@ import './Cardservice.css'
 import { useNavigate } from 'react-router';
 import {deleteServices} from '../../api/authservice'
 const Cardservice = ({service,getservice}) => {
-
+console.log("service",service)
  
   const navigate=useNavigate()
 
@@ -19,8 +19,8 @@ navigate(`/Updateservice/${service._id}`)
     
     <div>
        <button onClick={()=>navupdate()}>Update</button>
-       <button onClick={async()=>{await deleteServices(service._id);getservice()}}>Delete</button>
-     
+       <button type="button" onClick={async()=>{await deleteServices(service._id);getservice()}}>Delete</button>
+   
         <section className="articles">
   <article>
     <div className="article-wrapper">
