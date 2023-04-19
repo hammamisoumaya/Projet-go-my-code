@@ -28,13 +28,13 @@ const Addcareer = () => {
           Ajouter un career
         </label>
         
-        <input type="text"   value={name} 
+        <input type="text"   value={name}    placeholder="Ajouter le nom du career"
             
             onChange={(event) => setname(event.target.value)} />
        
       
       
-        <input   value={description}
+        <input   value={description}   placeholder="Ajouter la description du career"
             
             onChange={(event) => setdescription(event.target.value)} />
       

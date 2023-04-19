@@ -6,9 +6,7 @@ const Admin = ({auth,logout}) => {
     <>
   <div className="all">
     
-    <div className="left">
-      <div className="text"><Link to={'/Addservice'}>User</Link></div>
-    </div>
+  
     <div className="center">
       <div className="explainer">
         <span>Hover me</span>

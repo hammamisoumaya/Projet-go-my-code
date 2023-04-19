@@ -44,13 +44,13 @@ if(id){getUniqueId(id)}
       Mise à jour le service
     </label>
     
-    <input type="text"   value={nom} 
+    <input type="text"   value={nom}    placeholder="Ajouter le nom du service"
         
         onChange={(event) => setnom(event.target.value)} />
    
   
   
-    <input   value={description}
+    <input   value={description}      placeholder="Ajouter la description du service"
         
         onChange={(event) => setdescription(event.target.value)} />
   
@@ -60,6 +60,7 @@ if(id){getUniqueId(id)}
     id="image"
     name="image"
     value={image}
+    placeholder="Ajouter l'image du service"
     onChange={(event) => setimage(event.target.value)}
   />
       <button type="button" onClick={()=>handeUpdat(id,{nom,description,image})}>Ajouter</button>

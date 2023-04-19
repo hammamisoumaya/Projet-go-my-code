@@ -29,10 +29,9 @@ const home = () => {
   {/*header */}
 <header>
 <div className="overlay">
-<h1>Simply The Best</h1>
-<h3>Reasons for Choosing US</h3>
+
 <h1>Quete Technologie</h1>
-	
+	<p>Une agence Web Tunisie pour améliorer la présence digitale de votre marque et augmenter le trafic de votre site Web avec des solutions complètes de Webdesign, conseil et communication digitale pour les besoins uniques de votre entreprise.</p>
 
 		</div>
     </header>
@@ -73,39 +72,35 @@ const home = () => {
   </header>
   {/* About Section */}
   <div className="w3-container" style={{ padding: "128px 16px" }} id="about">
-    <h3 className="w3-center">ABOUT THE COMPANY</h3>
-    <p className="w3-center w3-large">Key features of our company</p>
+    <h3 className="w3-center">Une agence Web innovatrice</h3>
+    
     <div className="w3-row-padding w3-center" style={{ marginTop: 64 }}>
       <div className="w3-quarter">
         <i className="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" />
         <p className="w3-large">Responsive</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        En tant qu'agence digitale renommée, nous offrons un service personnalisé pour aider les entreprises à établir une présence en ligne solide. C'est pourquoi nous nous sommes présentés sous forme d'un clip hip hop pour transmettre notre message de manière originale et engageante.
         </p>
       </div>
       <div className="w3-quarter">
         <i className="fa fa-heart w3-margin-bottom w3-jumbo" />
         <p className="w3-large">Passion</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        Le hip hop, qui célèbre la créativité, l'individualité et la détermination, reflète parfaitement notre esprit déterminé et créatif
         </p>
       </div>
       <div className="w3-quarter">
         <i className="fa fa-diamond w3-margin-bottom w3-jumbo" />
         <p className="w3-large">Design</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        Avec notre expertise en conception de sites web, développement d'applications mobiles et e-commerce, ainsi que notre expérience en référencement web et stratégies de marketing digital, nous pouvons vous aider à vous démarquer de vos concurrents.
         </p>
       </div>
       <div className="w3-quarter">
         <i className="fa fa-cog w3-margin-bottom w3-jumbo" />
         <p className="w3-large">Support</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        Notre objectif est de créer des sites web à la fois fonctionnels et esthétiques, tout comme le hip hop peut être à la fois énergique et artistique. Nous voulons que nos sites web soient amusants et faciles à utiliser, tout comme notre clip hip hop est amusant et donne envie de danser.
         </p>
       </div>
     </div>
@@ -116,8 +111,7 @@ const home = () => {
       <div className="w3-col m6">
         <h3>We know design.</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod
+        Les utilisateurs peuvent naviguer à travers les différentes pages d'un site web en cliquant sur des liens hypertextes, en utilisant des menus de navigation, ou en effectuant des recherches internes sur le site
           <br />
           tempor incididunt ut labore et dolore.
         </p>
@@ -130,7 +124,7 @@ const home = () => {
       <div className="w3-col m6">
         <img
           className="w3-image w3-round-large"
-          src="/w3images/phone_buildings.jpg"
+          src="https://www.wmagence.com/upload/service-informatique-1637129003-43195-0.jpg"
           alt="Buildings"
           width={700}
           height={394}
@@ -169,24 +163,18 @@ const home = () => {
   <div className="w3-container w3-light-grey w3-padding-64">
     <div className="w3-row-padding">
       <div className="w3-col m6">
-        <h3>Our Skills.</h3>
+        <h3>Nos services</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod
+        Nox experts pluridisciplinaires travaillent en équipe pour obtenir le meilleur résultat pour votre marque, grâce à la recherche et à la connaissance, nous priorisons vos objectifs et nous les transformons en nôtres.
           <br />
           tempor incididunt ut labore et dolore.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod
-          <br />
-          tempor incididunt ut labore et dolore.
-        </p>
+        
       </div>
       <div className="w3-col m6">
         <p className="w3-wide">
           <i className="fa fa-camera w3-margin-right" />
-          Photography
+          Création de site web vitrine
         </p>
         <div className="w3-grey">
           <div
@@ -198,7 +186,7 @@ const home = () => {
         </div>
         <p className="w3-wide">
           <i className="fa fa-desktop w3-margin-right" />
-          Web Design
+          Création de boutique en ligne
         </p>
         <div className="w3-grey">
           <div
@@ -210,7 +198,7 @@ const home = () => {
         </div>
         <p className="w3-wide">
           <i className="fa fa-photo w3-margin-right" />
-          Photoshop
+          Création de site catalogues
         </p>
         <div className="w3-grey">
           <div
@@ -235,7 +223,7 @@ const home = () => {
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
         <div className="ag-courses-item_title">
-          UI/Web&amp;Graph design for teenagers 11-17&nbsp;years old
+        Création de site Web
         </div>
         <div className="ag-courses-item_date-box">
           Start:
@@ -247,7 +235,7 @@ const home = () => {
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
         <div className="ag-courses-item_title">
-          UX/UI Web-Design&nbsp;+ Mobile Design
+        Maintenance et mise à jour
         </div>
         <div className="ag-courses-item_date-box">
           Start:
@@ -259,7 +247,7 @@ const home = () => {
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
         <div className="ag-courses-item_title">
-          Annual package "Product+UX/UI+Graph designer&nbsp;2022"
+        Stratégie Social Média
         </div>
         <div className="ag-courses-item_date-box">
           Start:
@@ -280,7 +268,7 @@ const home = () => {
     <div className="ag-courses_item">
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
-        <div className="ag-courses-item_title">Motion Design</div>
+        <div className="ag-courses-item_title">Hébergement Web</div>
         <div className="ag-courses-item_date-box">
           Start:
           <span className="ag-courses-item_date">30.11.2022</span>
@@ -291,7 +279,8 @@ const home = () => {
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
         <div className="ag-courses-item_title">
-          Front-end development&nbsp;+ jQuery&nbsp;+ CMS
+          
+Référencement naturel
         </div>
       </a>
     </div>
@@ -304,7 +293,7 @@ const home = () => {
     <div className="ag-courses_item">
       <a href="#" className="ag-courses-item_link">
         <div className="ag-courses-item_bg" />
-        <div className="ag-courses-item_title">Interior Design</div>
+        <div className="ag-courses-item_title">Ergonomie et design</div>
         <div className="ag-courses-item_date-box">
           Start:
           <span className="ag-courses-item_date">31.10.2022</span>
@@ -324,51 +313,7 @@ const home = () => {
 
 
 
-  {/* Pricing Section */}
-  <div
-    className="w3-container w3-center w3-dark-grey"
-    style={{ padding: "128px 16px" }}
-    id="pricing"
-  >
-    <h3>Nos services</h3>
-    <p className="w3-large">Notre société de développement de sites web propose des services pour la conception, le développement et la maintenance de sites web pour les entreprises et les organisations.</p>
-    <div className="w3-row-padding" style={{ marginTop: 64 }}>
-      <div className="w3-third w3-section">
-        <ul className="w3-ul w3-white w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Création de site web vitrine</li>
-          <li className="w3-padding-16">
-          </li>
-          <li className="w3-padding-16">
-          Avec les progrès et l'expansion d'Internet, tout le monde est connecté. Et, bien que les réseaux sociaux soient très utiles pour votre entreprise, avoir un site vitrine offre beaucoup plus de crédibilité et d'autorité à votre entreprise. Car ce type de site Web constitue un moyen efficace et utile de mettre en valeur vos services, faire connaître votre entreprise et développer votre activité par l’acquisition de nouveaux prospects.
-
-Notre agence de création de site internet est spécialisée en conception de site vitrine axée sur l'augmentation des conversions et des contacts clients, afin de faire ressortir votre marque sur le Web avec une apparence professionnelle et de qualité. Et nous développons votre site web vitrine selon les nouvelles technologies Web, en privilégiant une excellente expérience entre l'entreprise et le client, à travers des pages avec une structure bien conçue et optimisée pour Google. Répondez aux besoins des clients, augmentez les ventes et maximisez votre retour sur investissement avec un site vitrine.
-          </li>
-          </ul>
-          </div>
-      <div className="w3-third">
-        <ul className="w3-ul w3-white w3-hover-shadow">
-          <li className="w3-red w3-xlarge w3-padding-48">Maintenance et mise à jour</li>
-          <li className="w3-padding-16">
-          Un site Web doit être bien structuré, interactif et toujours mis à jour, tant sur le plan fonctionnel que visuel. Il ne s’agit plus seulement d’avoir un site Web pour afficher des informations sur l’entreprise, de nos jours, créer un site Web avec un contenu pertinent qui convertit plus de prospects (clients potentiels) vers votre entreprise est essentiel à son succès, alors n’hésitez pas quand il s’agit d’embaucher les services de mise à jour et de maintenance de Novatis.
-
-Après un certain temps, il est nécessaire de reformuler la mise en page. Depuis de petits changements (modernisation) de la mise en page, comme une refonte totale. Nous avons toujours des modalités spéciales pour ce type de travail pour nos clients.
-
-
-          </li>
-           
-        </ul>
-      </div>
-      <div className="w3-third w3-section">
-        <ul className="w3-ul w3-white w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Réferencement SEO</li>
-          <li className="w3-padding-16">
-          L'optimisation pour les moteurs de recherche (SEO) ou référencement naturel consiste en de nombreuses méthodes et stratégies ayant pour objectif d'augmenter la présence et la visibilité de votre site web dans les moteurs de recherche, tels que Google, Bing et Yahoo.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
+ 
 
 
 
