@@ -7,6 +7,7 @@ const NavBar = () => {
   return (
   
         <div><ul>
+          
     <li><a  ><Link to={'/Homepage'}>Accueil</Link></a></li>
     <li><a><Link to={'/Services'}>Nos services</Link></a></li>
     <li><a><Link to={'/Agence'}>Offre d'emploi</Link></a></li>

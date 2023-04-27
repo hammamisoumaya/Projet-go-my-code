@@ -4,27 +4,34 @@ import { Link } from 'react-router-dom'
 const User = ({auth,logout}) => {
   return (
     <>
-  <div className="all">
-    <div className="lefter">
-      <div className="text"><Link to={'/Contact'}>Contact</Link></div>
-    </div>
-    <div className="left">
-      <div className="text"><Link to={'/Services'}>Nos services</Link></div>
-    </div>
-    <div className="center">
-      <div className="explainer">
-        <span>Hover me</span>
+    <h3 className="front__text-header">{auth.name}</h3>
+    <div className="background"></div>
+<div className="outer-div">
+  <div className="inner-div">
+    <div className="front">
+      <div className="front__bkg-photo"></div>
+      <div className="front__face-photo"></div>
+      <div className="front__text">
+        <h3 className="front__text-header">{auth.name}</h3>
+        <p className="front__text-para"><i className="fas fa-map-marker-alt front-icons"></i>{auth.email}</p>
+        
+        <span className="front__text-hover">Hover to enter to the application </span>
       </div>
-      <div className="text"><Link to={'/Homepage'}>Accueil</Link></div>
     </div>
-    <div className="right">
-      <div className="text"><Link to={'/Agence'}>L'agence</Link></div>
+    <div className="back">
+      <div className="social-media-wrapper">
+        <a href="#" className="social-icon"><i className="fab fa-codepen" aria-hidden="true"><Link to={'/Homepage'}>Accueil</Link></i></a> 
+        <a href="#" className="social-icon"><i className="fab fa-github-square" aria-hidden="true"><Link to={'/Services'}>Nos services</Link></i></a>
+        <a href="#" className="social-icon"><i className="fab fa-linkedin-square" aria-hidden="true"><Link to={'/Agence'}>Nos offre d'emploi</Link></i></a>
+         <a href="#" className="social-icon"><i className="fab fa-instagram" aria-hidden="true"><div classNameName="text" onClick={()=>logout()}>Déconnexion</div></i></a>
+      </div>
     </div>
-    <div className="righter">
-      <div className="text" onClick={()=>logout()}>Déconnexion</div>
-    </div>
+
   </div>
+</div>
+  
 </>
+
   )
 }
 

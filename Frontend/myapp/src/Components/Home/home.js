@@ -322,31 +322,10 @@ Référencement naturel
 
   
   {/* Footer */}
-  <footer className="w3-center w3-black w3-padding-64">
-    <a href="#home" className="w3-button w3-light-grey">
-      <i className="fa fa-arrow-up w3-margin-right" />
-      To the top
-    </a>
-    <div className="w3-xlarge w3-section">
-      <i className="fa fa-facebook-official w3-hover-opacity" />
-      <i className="fa fa-instagram w3-hover-opacity" />
-      <i className="fa fa-snapchat w3-hover-opacity" />
-      <i className="fa fa-pinterest-p w3-hover-opacity" />
-      <i className="fa fa-twitter w3-hover-opacity" />
-      <i className="fa fa-linkedin w3-hover-opacity" />
-    </div>
-    <p>
-      Powered by Hammami Soumaya
-      <a
-        href="https://www.w3schools.com/w3css/default.asp"
-       
-        target="_blank"
-        className="w3-hover-text-green"
-      >
-        
-      </a>
-    </p>
-  </footer>
+  <footer style={{ backgroundColor: '#FFE4E1', padding: '20px', textAlign: 'center' }}>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOelUNrxkHRJiFCw2A1OpVDTi0bg_YTlo53w&usqp=CAU" alt="Logo" style={{ maxWidth: '50%', marginBottom: '10px' }} />
+      <p style={{  fontSize: '1em',color: '#000080' }}>Powered by Hammami Soumaya</p>
+    </footer>
 </>
 
     </div>

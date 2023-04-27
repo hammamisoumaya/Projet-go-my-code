@@ -1,15 +1,15 @@
 import React from 'react'
 
-import './agence.css'
+import './Card.css'
 import { useNavigate } from 'react-router';
-
-const Cardcareer = ({career}) => {
-
+import {deleteServices} from '../../api/authservice'
+const Cardservice = ({service,getservice}) => {
+console.log("service",service)
  
   const navigate=useNavigate()
 
-  const navcar = ()=>{
-navigate(`/Updatecareer/${career._id}`)
+  const navupdate=()=>{
+navigate(`/Updateservice/${service._id}`)
   }
 
 
@@ -19,15 +19,17 @@ navigate(`/Updatecareer/${career._id}`)
     
     <div>
       
-     
+   
         <section className="articles">
   <article>
     <div className="article-wrapper">
-      
+      <figure>
+        <img src={service.image} alt="" />
+      </figure>
       <div className="article-body">
-        <h2>{career.name}</h2>
+        <h2>{service.nom}</h2>
         <p>
-        {career.description}
+        {service.description}
         </p>
         <a href="#" className="read-more">
           Read more <span className="sr-only">about this is some title</span>
@@ -55,4 +57,4 @@ navigate(`/Updatecareer/${career._id}`)
   )
 }
 
-export default Cardcareer
+export default Cardservice

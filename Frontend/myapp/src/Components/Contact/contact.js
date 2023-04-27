@@ -13,8 +13,8 @@ const contact = () => {
     style={{ padding: "128px 16px" }}
     id="contact"
   >
-    <h1 className="w3-center">CONTACTEZ NOUS</h1>
-    <p className="w3-center w3-large">Décrivez-nous votre projet à l’aide du formulaire ci-dessous. Notre équipe vous recontactera sous 24h pour vous faire une proposition d’accompagnement !</p>
+    <h1 className="w3-center" style={{textAlign: 'center', color: '#FF69B4'}}>Contactez Nous</h1>
+    <p className="w3-center w3-large" style={{textAlign: 'center',color: '#000080', fontSize: '2em', fontWeight: 'bold'}}>Décrivez-nous votre projet à l’aide du formulaire ci-dessous. Notre équipe vous recontactera sous 24h pour vous faire une proposition d’accompagnement !</p>
     <div style={{ marginTop: 48 }}>
       
       <p>
@@ -78,7 +78,10 @@ const contact = () => {
     </div>
   </div>
     
-
+  <footer style={{ backgroundColor: '#FFE4E1', padding: '20px', textAlign: 'center' }}>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOelUNrxkHRJiFCw2A1OpVDTi0bg_YTlo53w&usqp=CAU" alt="Logo" style={{ maxWidth: '50%', marginBottom: '10px' }} />
+      <p style={{  fontSize: '1em',color: '#000080' }}>Powered by Hammami Soumaya</p>
+    </footer>
  
 
     </div>

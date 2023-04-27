@@ -6,7 +6,7 @@ import {fetchAccount} from '../api/authuser'
 
 import User from '../Components/User/User'
 import Admin from '../Components/Admin/Admin'
-
+import NavBar from './NavBar/navbar'
 
 import Login from '../Components/Register'
 const PrivateRoute = () => {
@@ -47,7 +47,7 @@ return (
          <div>
 {
   token ? (<>   
- { /* <NavBarContainer auth={auth} logout={logout} /> */ }
+ { /* <NavBar auth={auth} logout={logout} /> */ }
   
 
   {auth.role === "admin" ? (<Admin  auth={auth} /> ):( <User logout={logout}  auth={auth}/>) } 
